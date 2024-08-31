@@ -1,0 +1,460 @@
+/* Container for the entire product details section */
+.product-details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Reduce the gap between sections */
+    padding: 10px;
+    margin-top: 1.6rem;
+}
+
+/* Button group styling */
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.button-group button {
+    flex: 1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+    background-color: #0056b3;
+}
+
+/* Section container */
+.section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.8rem;
+}
+
+/* Left image section */
+.left-images {
+    display: block;
+    flex-direction: column;
+    width: 70%;
+}
+
+/* Product information section */
+.product-info-section,
+a {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: small;
+    text-decoration: none;
+}
+
+.product-info-section {
+    margin-bottom: 1rem;
+}
+
+/* Main section containing product gallery and main image */
+.product-main-section {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 5px; /* Set gap between elements */
+    width: 95%;
+}
+
+/* Gallery for product images */
+.product-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start; /* Align items to the left */
+    flex: 0 0 auto; /* Allow gallery to shrink */
+}
+
+.product-gallery img {
+    width: 70px; /* Adjust gallery product size */
+    height: 70px; /* Adjust gallery product size */
+    cursor: pointer;
+}
+
+/* Main image container */
+.main-image-container {
+    flex: 1; /* Take remaining space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-image {
+    max-width: 100%; /* Ensure main image fits its card */
+    max-height: 380px; /* Limit image height */
+    object-fit: contain; /* Maintain aspect ratio */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* Card for displaying product information */
+.product-info-card {
+    width: 28%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fffafa;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    left: 0ch;
+}
+
+.product-info-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.product-info-card input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.product-info-card a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.product-info-card a:hover {
+    color: #0056b3;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+    .product-info-card {
+        width: 80%; /* Take full width on smaller screens */
+    }
+
+    .section {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        align-items: center; /* Center align elements */
+    }
+
+    .left-images {
+        width: 100%; /* Take full width on smaller screens */
+    }
+
+    .product-main-section {
+        width: 100%; /* Take full width on smaller screens */
+    }
+}
+
+/* Styles for featured and most sold products */
+.featured-products,
+.most-sold-products {
+    margin-top: 20px;
+}
+
+.featured-products .product-list,
+.most-sold-products .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.featured-products h3,
+.most-sold-products h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.featured-products .product,
+.most-sold-products .product {
+    text-align: center;
+    max-width: 150px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.featured-products .product img,
+.most-sold-products .product img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.featured-products .product:hover,
+.most-sold-products .product:hover {
+    transform: scale(1.05);
+}
+
+/* Styles for product details and specifications section */
+.product-details-section {
+    margin-top: 20px;
+}
+
+.product-details-section h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-details-section p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.product-details-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.product-details-section ul li {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Ensuring reviews section has space */
+.product-details-section #review-section {
+    margin-top: 20px;
+}
+
+/* Order sidebar styles */
+.order-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.order-sidebar-content {
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.close-button {
+    align-self: flex-end;
+    padding: 5px 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.order-options {
+    margin-top: 20px;
+}
+
+.variation-selection {
+    margin-bottom: 10px;
+}
+
+.variation-options, .size-option {
+    display: flex;
+    align-items: center;
+}
+
+.variation-option {
+    margin-right: 10px;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-control button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.quantity-control span {
+    margin: 0 10px;
+}
+
+.continue-button {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.shipping .buttons{
+  display: flex; 
+  align-items: center;
+}
+
+
+ .buttons button{
+    justify-content: space-evenly;
+    margin: 0.4rem;
+    padding: 10px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    bottom: 0;
+    margin: 0.3rem;
+    font-size: 13px;
+    color: white;
+    border: solid 2px;
+}
+
+ #order{
+   background-color: chocolate;
+   font-size: 16px;
+   
+}
+
+ #order:hover{
+    background-color: #6488ad;
+    transition: background-color 0.5s;
+    color: rgb(231, 250, 249);
+    
+ }
+
+.add-to-cart{
+    background-color: rgb(191, 158, 207);
+    font-size: 16px;
+    
+ }
+
+ .add-to-cart:hover{
+    background-color: #6488ad;
+    transition: background-color 0.5s;
+    color: rgb(231, 250, 249);
+ }
+
+ .shipping .buttons p {
+    border-radius: 80%;
+    padding: 0.2rem;
+}
+.shipping .buttons p :last-child{
+    width: 30px;
+    height: 30px;
+    margin-left: 0.4rem;
+    align-items: center;
+   
+}
+
+.shipping .buttons p:last-child:hover{
+    background-color: #f4f4f4;
+    transition: background-color 0.1s;
+    padding: 0.2rem;
+    border-radius: 80%;
+}
+
+.variations img{
+    margin: 0.2rem;
+    width: 35px;
+    height: 35px;
+    border: solid 1px;
+}
+
+.variations .sizes button{
+    margin: 0.2rem;
+    border: none;
+}
+
+.price-range{
+    margin-bottom: -30px;
+}
+
+
+/* Side card editting */
+.order-sidebar{
+    border-radius: 5px;
+}
+.sidebar-header{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #6488ad; */
+    height: fit-content; 
+    
+}
+
+.sidebar-header .close-button{
+    background-color: #440c84;
+    font-size: large;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.variation-selection{
+    margin-bottom: 50px;
+}
+
+.variation-options{
+   display: flex;
+   margin: -0.5rem;
+}
+
+.variation-options img{
+    margin: 0.2rem;
+    width: 35px;
+    height: 35px;
+    border: solid 1px;
+}
+
+.variation-option-color{
+    margin: 0.5rem;
+    width: 35px;
+    height: 35px;
+    
+}
+
+.size-option{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidcard-buttons{
+    width: 100%;
+    text-align: center;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+
+.sidcard-buttons button{
+    justify-content: space-evenly;
+    margin: 0.4rem;
+    padding: 10px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    bottom: 0;
+    margin: 0.3rem;
+    font-size: 15px;
+    color: white;
+    border: solid 2px;
+}
+
+.sidcard-buttons button{
+   width: 45%;
+}
+
+.thumbnail.selected, .color-thumbnail.selected, .size-button.selected {
+    border: 2px solid #007bff;
+  }
+  

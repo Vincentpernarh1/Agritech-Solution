@@ -1,0 +1,231 @@
+body, html {
+    margin-left: -0.2rem;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .message-container {
+    display: flex;
+    height: calc(100vh - 5rem); /* Adjust for fixed height and margin-top */
+    background-color: #f4f5f7;
+    flex-direction: row;
+    margin-top: 2.3rem;
+    margin-left: -0.5rem;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #1e3a8a;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    min-height: 100vh;
+    border-radius: 2px;
+  }
+
+  .sidebar-item:hover {
+    background-color: #43829b;
+    border :solid 0.001px ;
+    
+  }
+  
+  .sidebar-item {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .sidebar-item.active {
+    background-color: #43829b;
+  }
+  
+  .content-area {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+  }
+  
+  .contact-list {
+    width: 300px;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+  }
+  
+  .contact-item {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+  }
+  
+  .contact-item.selected {
+    background-color: #f7f7f7;
+  }
+  
+  .contact-name {
+    font-weight: bold;
+  }
+  
+  .contact-company {
+    font-size: 0.9em;
+    color: #777;
+  }
+  
+  .message-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    overflow: hidden;
+  }
+  
+  .message-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 17px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-contact-button {
+    background-color: #4222b5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .add-contact-button:hover {
+    background-color: #e65a00;
+  }
+  
+  .message-list {
+    flex: 1;
+    padding: 20px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column; /* Messages are displayed from top to bottom */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+  }
+  
+  .message-list::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in WebKit browsers */
+  }
+  
+  .message {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap: break-word; /* Ensure message text wraps */
+    white-space: pre-wrap; /* Ensure text wraps within the message bubble */
+    overflow-wrap: break-word; /* Handle long words */
+  }
+  
+  .message.me {
+    background-color: #e1ffc7;
+    align-self: flex-end;
+  }
+  
+  .message.other {
+    background-color: #f1f1f1;
+    align-self: flex-start;
+  }
+  
+  .message-input-container {
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+  }
+  
+  .message-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 50px; /* Increase the initial height */
+    max-height: 150px; /* Set a max height */
+    overflow: auto; /* Enable scrolling for multi-line input */
+  }
+  
+  .send-button {
+    background-color: #ff6a00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .send-button:hover {
+    background-color: #e65a00;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .message-container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .sidebar {
+      width: 100%;
+      min-height: auto;
+      order: 2;
+      background-color: #1e3a8a;
+    }
+  
+    .content-area {
+      flex-direction: column;
+    }
+  
+    .contact-list {
+      width: 100%;
+      border-right: none;
+      order: 1;
+    }
+  
+    .message-area {
+      order: 3;
+      max-height: calc(100vh - 5rem); /* Adjust for fixed height */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .message-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .add-contact-button {
+      margin-top: 10px;
+    }
+  
+    .message-input-container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .message-input {
+      margin-bottom: 10px;
+    }
+  
+    .send-button {
+      width: 100%;
+    }
+  }
+  

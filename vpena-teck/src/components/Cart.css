@@ -1,0 +1,142 @@
+/* Cart page layout */
+.cart-page {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+  margin-top: 2.3rem;
+}
+
+/* Cart container */
+.cart-container {
+  flex: 2.4;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Cart symbol */
+.cart-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  
+}
+
+
+.cart-icon h2{
+  margin-left: 1rem;
+  color: rgb(66, 66, 167);
+}
+.cart-icon svg {
+  width: 24px;
+  height: 24px;
+  color: rgb(66, 66, 167);
+}
+
+/* Cart count */
+.cart-count {
+  background-color: rgb(66, 66, 167);
+  color: #fff;
+  font-size: 11px;
+  border-radius: 50%;
+  padding: 4px 8px;
+  margin-left: 4px;
+  margin-top: 1.5rem;
+  margin-top: -1px;
+}
+
+/* Cart content */
+.cart-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-content li:hover{
+  background-color: rgb(238, 255, 254);
+  border: solid 0. aliceblue;
+}
+ 
+.cart-content li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+/* Cart item image */
+.cart-item-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  object-fit: cover;
+  display: inline-block;
+}
+
+/* Checkout container */
+.checkout-container {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  /* left: 0; */
+}
+
+/* Shipping info */
+.shipping-info {
+  margin-bottom: 20px;
+}
+
+/* Cart total */
+.cart-total {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Checkout button */
+.checkout-button {
+  background-color: #1e40af;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.checkout-button:hover {
+  background-color: #1e60ff;
+}
+
+.remove-item-button{
+  right:0;
+}
+
+.cart-left-side  {
+  display:grid;
+  text-align: center;
+}
+
+.cart-left-side span:last-child  {
+  text-align: left;
+  word-wrap: break-word;
+  font-size: 16px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.mb-2{
+  border: solid rgb(249, 247, 247);
+  border-radius: 2%;
+}
+
+.cart-image-name{
+  display: flex;
+}
+
+
+
+.cart-image-name-checkbox{
+  display: flex;
+}

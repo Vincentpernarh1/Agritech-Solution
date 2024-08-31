@@ -1,0 +1,92 @@
+/* PaymentForm.css */
+
+.payment-form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    /* margin-top: 2.5rem; */
+  }
+  
+  .payment-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .payment-form-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+  }
+  
+.payment-form-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+
+.payment-form-container .form-group input {
+    width: 98%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  } 
+  
+  .payment-form-container button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .payment-form-container button:hover {
+    background-color: #45a049;
+  }
+  
+  .payment-form-container p {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .payment-form-container p.error {
+    color: red;
+  }
+  
+  .payment-form-container p.status {
+    color: green;
+  }
+  
+
+  .product-name{
+    display: flex;
+  }
+
+  .product-name img{
+    height: 40px;
+    width: 40px;
+    margin: 0.2rem;
+  }
+
+  .product-name .product-item{
+  display: flex;
+   width: 100%;
+  }
+
+.total-amount{
+    display: inline-flex;
+    align-items: center;
+    margin: 0.5%;
+    margin-left: 23%;
+    width: 60%;
+    padding: 0.3rem;
+    
+  }
+  .total-amount h5{
+    margin-left: 3%;
+  }

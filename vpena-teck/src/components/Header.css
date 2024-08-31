@@ -1,0 +1,133 @@
+/* Header.css */
+
+header {
+  background-color: #1e3a8a;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  height: 15px;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+
+.username{
+  color: antiquewhite;
+  font-size: small;
+  margin-right: 0.4rem;
+}
+
+.user-profile{
+  text-align: center;
+  display: inline-block;
+}
+
+.left-side .logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.menu {
+  cursor: pointer;
+  color: white;
+  margin-top: -17px;
+  margin-left: 1rem;
+}
+
+form {
+  flex-grow: 1;
+  width: 1%;
+}
+
+.search{
+  width: 50%;
+  display: flex;
+  position: relative;
+  background-color: white;
+  text-align: left;
+  border-radius: 5px;
+  border: none;
+}
+
+
+.search .search-button{
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  right: 0;
+  width: 5px;
+  margin-right: -0.8rem;
+}
+
+/* .search .search-button:hover{
+  background-color: rgb(240, 234, 234);
+ 
+} */
+
+input[type="text"] {
+  padding: 6px;
+  border-radius: 0px;
+  border: none;
+  margin-left: -1rem;
+  width: 100%;
+}
+
+
+.right-side {
+  display: inline-flex;
+  align-items: center;
+  margin: 0.8rem;
+
+  justify-content: space-between;
+}
+
+.cart-icon-head {
+  position: relative;
+  margin: 1rem;
+
+}
+
+
+.cart-icon-head .cart-count-head{
+  background-color:red;
+  border-color: #1e3a8a;
+  color:white;
+  padding: 0px 5px;
+  font-size: 11px;
+  border-radius: 100%;
+}
+
+.cart-count-head {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  color:white;
+}
+
+.user-profile {
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.profile-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 90%;
+  color: aliceblue;
+  border: white solid;
+}
+
+.text-xs {
+  font-size: 12px;
+}
+
+.mt-1 {
+  margin-top: 4px;
+}

@@ -1,0 +1,119 @@
+/* General styles for products container */
+.products-container {
+  display: grid;
+  flex-direction: column; /* Arrange elements vertically */
+  background-color: rgb(255, 246, 237);
+  width: 100%;
+  padding: 8px; /* Add some padding for visual comfort */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Custom scrollbar styles */
+html::-webkit-scrollbar {
+  width: 8px; /* Make scrollbar smaller */
+  height: 8px; /* Make horizontal scrollbar smaller */
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #ededed; /* Color of the scrollbar track */
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #1e3a8a; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Round edges of the scrollbar thumb */
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: #5a5b5d; /* Darker blue on hover */
+}
+
+/* Grid layout for products */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+  gap: 18px;
+}
+
+/* Styling for each product card */
+.product-card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling for product links */
+.product-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Styling for product images */
+.product-card img {
+  border-radius: 8px 8px 0 0; /* Rounded corners for top of the image */
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+/* Styling for product content */
+.product-content {
+  flex-grow: 1; /* Allow content to grow and occupy remaining space */
+  display: flex;
+  flex-direction: column;
+  padding: 10px; /* Padding inside the content area */
+}
+
+/* Styling for product titles */
+.product-card h3 {
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.product-name{
+  font-size: 10px;
+  }
+
+/* Styling for product descriptions */
+.product-card p {
+  font-size: 1rem;
+  flex-grow: 1;
+  margin-bottom: 10px; /* Margin below description */
+}
+
+/* Styling for price range */
+.price-range {
+  margin-top: auto;
+  font-weight: bold; /* Bold text for price */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 500px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout on smaller screens */
+  }
+
+  .product-card {
+    padding: 5px;
+  }
+
+  .product-card h3 {
+    font-size: 1rem; /* Decreased font size for title on smaller screens */
+  }
+
+
+.product-name{
+  width: 170px;
+  white-space: nowrap;
+  }
+
+  .product-card p {
+    font-size: 0.9rem; /* Decreased font size for description on smaller screens */
+  }
+}

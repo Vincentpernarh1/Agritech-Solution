@@ -1,0 +1,133 @@
+.user-profile-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 3rem;
+}
+
+.user-profile-header {
+  text-align: left;
+  margin-bottom: 20px;
+  border: solid 1px rgb(237, 228, 228);
+  display: flex;
+}
+
+.user-profile-header .id{
+  font-size: small;
+  font-weight: lighter;
+  margin-right: 0.2rem;
+}
+
+.user-profile-header .info{
+  display: inline-block;
+}
+
+.image{
+  border-right: dotted 1px blue;
+  display: flex;
+  margin-right: 2%;
+}
+
+.image .profile {
+  text-align: center;
+ 
+}
+.image .profile .link{
+  margin-left: 1rem;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.user-profile-photo {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  background-color: #032e5b;
+  color: white;
+  margin: 1rem;
+}
+
+.user-profile-header p {
+  font-size: 14px;
+  font-weight:lighter;
+  margin-bottom: 10px;
+  word-break:keep-all;
+}
+
+
+.user-profile-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.user-profile-info {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  flex: 1;
+  min-width: 250px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.user-profile-info h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.user-profile-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.user-profile-list li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.user-profile-list li a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.user-profile-list li a:hover {
+  text-decoration: underline;
+}
+
+.user-profile-button {
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 3px;
+  display: inline-flex;
+}
+
+.user-profile-button:hover {
+  background-color: #c9c9c9;
+}
+
+.user-profile-login {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #007bff;
+}
+
+.user-profile-logout {
+  text-align: center;
+  margin-top: 20px;
+  
+}
+
+.user-profile-logout button{
+  font-size: large;
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem;
+}
